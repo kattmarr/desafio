@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #8B0000; /* Cambié a un rojo oscuro */
+}
+
+.contenedor-principal {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-interno {
+  background-color: white;
+  border-radius: 15px; /* Bordes más redondeados */
+  padding: 30px; /* Más espacio interno */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  width: 320px; /* Ancho fijo */
+}
+
+.color {
+  margin: 20px 0;
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px; /* Aumentar el tamaño de la fuente */
+  color: #333; /* Color más oscuro para los labels */
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  margin: 10px 0; /* Espaciado entre el slider y el texto */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none; 
+  width: 25px; /* Ancho del "thumb" */
+  height: 25px; /* Alto del "thumb" */
+  border-radius: 50%; 
+  background: #007bff; /* Color del "thumb" */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para el thumb */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 25px; 
+  height: 25px; 
+  border-radius: 50%; 
+  background: #007bff; 
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+p {
+  margin-top: 5px;
+  font-size: 16px; /* Tamaño de fuente más pequeño */
+  color: #333; /* Color del texto */
+}
+
+.color-actual {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  border-radius: 5px; /* Bordes redondeados */
+}
